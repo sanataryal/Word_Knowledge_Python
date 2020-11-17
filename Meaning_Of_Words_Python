@@ -1,0 +1,22 @@
+from PyDictionary import PyDictionary as di
+fn = input("Enter Your First Name: ")
+ln = input("Enter Your Last Name: ")
+while True:
+    word = input("Enter A Word: ")
+    print("What result do you want to get the word from?")
+    choice = ['1 = Meaning', '2 = Synonym', '3 = Antonym', '4 = Quit']
+    for i in choice:
+        print(i)
+    num = input("Please enter from above, what do you want to do with the word? (1, 2, 3 or 4): ")
+    if num == '1':
+        print(di.meaning(word))
+    elif num == '2':
+        print(di.synonym(word))
+    elif num == '3':
+        print(di.antonym(word))
+    elif num == '4':
+        print("Thank You for your visit,", fn +""+ ln,". See You Again")
+        break
+
+
+
